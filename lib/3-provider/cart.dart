@@ -12,7 +12,7 @@ class Cart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<Product> cartProductList = context.select<ProviderCart, List<Product>>(
-      (providerCart) => providerCart.cartProductList, // 변경되었을 때만 아래 return
+      (providerCart) => providerCart.cartProductList,
     );
 
     return Scaffold(

@@ -16,7 +16,6 @@ class ProviderBadge with ChangeNotifier {
     notifyListeners();
   }
 
-  // 메모리 누수 방지
   @override
   void dispose() {
     providerCart.removeListener(providerCartListener);

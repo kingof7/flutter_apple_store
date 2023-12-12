@@ -10,7 +10,7 @@ class ProviderCart with ChangeNotifier {
     if (cartProductList.contains(product)) {
       // cartProductList.remove(product);
       cartProductList = cartProductList.where((cartProduct) {
-        return cartProduct != product; // true를 반환하는 것만 cartProductList에 남는다.
+        return cartProduct != product;
       }).toList();
     } else {
       // cartProductList.add(product);

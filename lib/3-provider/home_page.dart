@@ -22,12 +22,10 @@ class _HomePageState extends State<HomePage> {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
-          create: (context) => ProviderCart(), // 부모 위젯
+          create: (context) => ProviderCart(),
         ),
         ChangeNotifierProvider(
-          create: (context) => ProviderBadge(
-            providerCart: context.read(),
-          ), // 부모 위젯
+          create: (context) => ProviderBadge(providerCart: context.read()),
         ),
       ],
       child: Scaffold(
