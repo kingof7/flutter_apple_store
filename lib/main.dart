@@ -1,4 +1,4 @@
-import 'package:app_store/3-provider/home_page.dart';
+import 'package:app_store/4-riverpod/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {

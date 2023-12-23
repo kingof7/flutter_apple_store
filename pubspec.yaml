@@ -40,6 +40,7 @@ dependencies:
   freezed: ^2.4.5
   json_serializable: ^6.7.1
   provider: ^6.1.1
+  flutter_riverpod: ^2.4.9
 
 dev_dependencies:
   flutter_test:
