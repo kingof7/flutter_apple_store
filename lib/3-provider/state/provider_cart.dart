@@ -9,9 +9,10 @@ class ProviderCart with ChangeNotifier {
   void onProductPressed(Product product) {
     if (cartProductList.contains(product)) {
       // cartProductList.remove(product);
+      // cartProductList.remove(product);
       cartProductList = cartProductList.where((cartProduct) {
         return cartProduct != product;
-      }).toList();
+      }).toList();    
     } else {
       // cartProductList.add(product);
       cartProductList = [...cartProductList, product];

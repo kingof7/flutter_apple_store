@@ -11,7 +11,8 @@ class Store extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    ProviderCart providerCart = context.watch();
+    ProviderCart providerCart = context.watch<ProviderCart>();
+
     return Scaffold(
       body: ListView.builder(
         itemCount: storeProductList.length,

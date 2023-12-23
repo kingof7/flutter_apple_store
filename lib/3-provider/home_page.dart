@@ -25,7 +25,9 @@ class _HomePageState extends State<HomePage> {
           create: (context) => ProviderCart(),
         ),
         ChangeNotifierProvider(
-          create: (context) => ProviderBadge(providerCart: context.read()),
+          create: (context) => ProviderBadge(
+            providerCart: context.read(),
+          ),
         ),
       ],
       child: Scaffold(
